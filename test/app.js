@@ -1,22 +1,16 @@
 //------------------------------------
-console.log("---------------------------");
-const dw = [1,2,3,4,5];
-console.log(dw);
-console.log(dw[0]);
-console.log(dw.length);
-dw.push(6);
-console.log(dw);
-
-//const player = ["magon", 22, false,"bigger"];
-const player = { //object?
-    name : "magon",
-    points : 10,
-    fat : true,
+function sayHello(name, age){
+    console.log("My name is "+name+" and I'm " + age);
+}
+sayHello("magon", 22);
+function plus(a, b){
+    console.log("plus : " + (a+b));
+}
+plus(10, 20);
+const player = {
+    n : "dragon",
+    f : function(){
+        console.log("name : " +this.n); //this는 자바나 자바스크립트나 똑같은거 같다.
+    },
 };
-console.log(player.name);
-console.log(player.points);
-console.log(player.fat);
-console.log(player);
-player.fat = false; // player 자체는 불변이지만 안에 것들은 가변이다
-player.lastname = "choi"; //안에 없는것을 추가 할수 있다. 
-console.log(player);
+player.f();
