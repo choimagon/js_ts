@@ -18,3 +18,4 @@ const dw = [1,2,3,4,5];
 console.log(dw);
 console.log(dw[0]);
 console.log(dw.length);
+//
